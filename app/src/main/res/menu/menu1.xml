@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="액션바 생성은"/>
+    <item
+        android:title="res에서 menu 만든 뒤"/>
+    <item
+        android:title="values의 themes에서"/>
+    \
+    <item
+        android:title="parent의 NoActionBar를"/>
+    <item
+        android:title="DarkActionBar 이런식으로"/>
+    <item
+        android:title="바꾸면 바만 출력이 되고"/>
+    <item
+        android:title="onCreateOptionsMenu를"/>
+    <item
+        android:title="오버라이드하고"/>
+    <item
+        android:title="menuInflater 이걸 해야"/>
+    <item
+        android:title="menu에서 만든 메뉴들이"/>
+    <item
+        android:title="출력이 됨"/>
+</menu>
