@@ -21,11 +21,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
-        if (binding.loginSwitch.isEnabled) {
-            Toast.makeText(this, "로그인 유지", Toast.LENGTH_LONG).show()
-        } else {
-            Toast.makeText(this, "로그인 유지 해제", Toast.LENGTH_SHORT).show()
+
+        binding.loginSwitch.setOnClickListener {
+            if (binding.loginSwitch.isChecked) {
+                Toast.makeText(this, "로그인 유지", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this, "로그인 유지 해제", Toast.LENGTH_SHORT).show()
+            }
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
