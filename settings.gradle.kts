@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "kimyong_android"
 include(":app")
- 
+include(":ch09_recycler_view")
