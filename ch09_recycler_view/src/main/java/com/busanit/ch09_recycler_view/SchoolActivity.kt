@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.busanit.ch09_recycler_view.databinding.ActivitySchoolBinding
 import com.busanit.ch09_recycler_view.databinding.StudentItemBinding
 
-data class Students(val name: String, val age: Int, val grade: Int)
+data class Students(var name: String, var age: Int, var grade: Int)
 val studentsList = mutableListOf<Students>()
 class SchoolActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

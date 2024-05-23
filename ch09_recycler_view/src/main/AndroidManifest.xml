@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kimyong_android">
         <activity
-            android:name=".SchoolActivity"
+            android:name=".PlusDeleteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +18,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".chatgptActivity"
-            android:exported="false" />
+            android:name=".SchoolActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
