@@ -9,6 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kimyong_android">
         <activity
+            android:name=".반복연습.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".반복연습.RecyclerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".PlusDeleteActivity"
             android:exported="true">
             <intent-filter>
@@ -19,6 +31,15 @@
         </activity>
         <activity
             android:name=".SchoolActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kim.ItemActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

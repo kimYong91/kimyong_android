@@ -11,9 +11,6 @@
       <SelectionState runConfigName="ch09_recycler_view">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SchoolActivity">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="PlusDeleteActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
