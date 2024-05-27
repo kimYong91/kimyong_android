@@ -26,7 +26,7 @@ class RecyclerActivity : AppCompatActivity() {
 
         val myAdapter = ItemAdapter(itemList)
         val myLayoutManager = LinearLayoutManager(this@RecyclerActivity)
-        val myItemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        val myItemDecoration = DividerItemDecoration(this@RecyclerActivity, DividerItemDecoration.VERTICAL)
 
         binding.run {
             recyclerView.apply {
