@@ -4,15 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.busanit.ch09_recycler_view.R
-import com.busanit.ch09_recycler_view.databinding.ActivityDetailBinding
 import com.busanit.ch09_recycler_view.databinding.ActivityRecyclerBinding
 import com.busanit.ch09_recycler_view.databinding.ItemBinding
 
@@ -39,7 +34,7 @@ class RecyclerActivity : AppCompatActivity() {
                 val age = editAge.text.toString()
                 val name = editName.text.toString()
 
-                val itmes = Item(age, name)
+                val itmes = Item(name, age)
                 itemList.add(itmes)
                 myAdapter.notifyItemInserted(itemList.size -1)
             }
@@ -57,14 +52,8 @@ class ItemAdapter(val itemList: MutableList<Item>) : RecyclerView.Adapter<ItemAd
                     itemList.removeAt(adapterPosition)
                     notifyItemRemoved(adapterPosition)
                 }
-                linearView.setOnClickListener{
-                    val intent = Intent(binding.root.context, DetailActivity::class.java)
-                    binding.root.context.startActivity(intent)
-
-                    intent.putExtra("Key", binding.textName.text.toString())
-                    intent.putExtra("Key", binding.textAge.text.toString())
-                    binding.root.context.startActivity(intent)
-                }
+                textName.text = item.name
+                textAge.text = item.age
 
             }
         }
