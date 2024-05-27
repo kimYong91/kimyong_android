@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kimyong_android">
         <activity
+            android:name=".반복연습.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".반복연습.DetailActivity"
             android:exported="false" />
         <activity
