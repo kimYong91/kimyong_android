@@ -1,12 +1,14 @@
 package com.example.room
 
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.example.room.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
@@ -49,11 +51,23 @@ class MainActivity : AppCompatActivity() {
                     val name = editTextName.text.toString()
                     val age = editTextAge.text.toString().toInt()
 
-                    val user =
-
 
                 }
             }
         }
+    }
+}
+
+class RoomAdapter(val users: MutableList<User>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        TODO("Not yet implemented")
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun getItemCount(): Int {
+        TODO("Not yet implemented")
     }
 }
